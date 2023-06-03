@@ -9,3 +9,4 @@ print(lista2)
 print(len(lista1))
 
 lista3 = ["Daniel", "Gomes", "de", "andrade"]
+print(lista3)
