@@ -8,4 +8,4 @@ print(lista2)
 
 print(len(lista1))
 
-Daniel Gomes de andrade
+lista3 = ["Daniel", "Gomes", "de", "andrade"]
