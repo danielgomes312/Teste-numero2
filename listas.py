@@ -1,12 +1,32 @@
+# O(n^2) time | O(1) space
+array = [3, 5, -4, 8, 11, 1, -1, 6]
 
+targetSum = 10
 
-lista1 = [2.0, 3.5, 4.7]
-print(lista1)
+from tkinter import *
+import datetime
+import time
+import winsound
+from threading import *
 
-lista2 = [1, 5, 9, 11, 15]
-print(lista2)
+def twoNumberSum(array, targetSum):
+    for i in range(len(array) - 1):
+        firstNum = array[i]
+        for j in range(i + 1, len(array)):
+            secondNum =array[j]
+            if firstNum + secondNum == targetSum:
+                return [firstNum, secondNum]
+    return[]
 
-print(len(lista1))
+twoNumberSum([3, 5, -4, 8, 11, 1, -1, 6], 10)
 
-lista3 = ["Daniel", "Gomes", "de", "andrade"]
-print(lista3)
+# O(n) time | O(n) space
+def twoNumberSum(array, targetSum):
+    nums = {}
+    for num in array:
+        potentiontialMatch = targetSum - num
+        if targetSum - num in nums:
+            return [targetSum - num, num]
+        else:
+            nums[num] = True
+    return []
