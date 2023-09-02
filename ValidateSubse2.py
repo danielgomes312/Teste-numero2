@@ -20,7 +20,7 @@ def isValidSubsequence(array, sequence):
 array = [5, 1, 22, 25, 6, -1, 8, 10]
 #lenn = [0, 1,  2,  3, 4,  5, 6,  7]
 
-sequence = [1, 6, -1, 10, 7]
+sequence = [1, 6, -1, 10]
 
 
 result = isValidSubsequence(array,sequence)

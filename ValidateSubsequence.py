@@ -12,7 +12,7 @@ def isValidSubsequence(array, sequence):
     rightSide = 0
     # I think that is the last number, but i dont have sure.
     leftSide = 0
-    # While the first number is lower them the  
+    # While the first number is lower them the 
     while rightSide < len(array) and leftSide < len(sequence):
         if array[rightSide] == sequence[leftSide]:
             leftSide +=1
