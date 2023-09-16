@@ -66,5 +66,6 @@ class CompanyClone(CreateView):
     """Get object desired from url with record.id and override the object context with it."""
     model = models.Company
     form_class.Company
-    
+
+
 
